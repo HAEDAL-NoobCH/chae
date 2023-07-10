@@ -3,33 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pretty.css">
-    <title>2주차 과제</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script 
+    src="https://kit.fontawesome.com/2d323a629b.js"
+    crossorigin="anonymous"></script>
+    <title>Youtube Practice</title>
 </head>
 <body>
-    <h1 id="title">2주차 과제</h1>
-    <div>
-    <p class="background">
-        안녕하세요 저는 전자공학부 22학번 박채빈 입니다.
-    </p>
-</div>
-<div>
-    <img src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/8LOK/image/Kx3PTA8nv2pHelBbVxvavOi0lK0.JPG"
-    alt="img1" class="test">
-    <img src="https://t1.daumcdn.net/brunch/service/user/8LOK/file/IpXJp9RWtyKGXNbS35wGLGaWdlw.JPG?download"
-    alt="img2" class="test">
-</div>
-<div>
-    <ul>
-        <li><h4>취미: 누워있기, 누워서 게임하기, 농구보기, 귀여운 영상보기(고양이, 강아지, 앵무새)</h4></li>
-        <li><h4>특기: 오래 누워있기, 농구보며 평가하기(훈수)</h4></li>
-    </ul>
-</div>
-<div>
-    <ol class="hah">
-        <li><h4>장점: 집중력이 좋다</h4></li>
-        <li><h4>단점: 그 시간이 짧다(통계를 제외한 수학을 좋아해 수학한정으로 집중력이 좋다할 수 있다)</h4></li>
-    </ol>
-</div>
+
+    <!--header-->
+    <!--아이콘 선택 아이콘으로할지 버튼으로할지도 선택9분경-->
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <span class="title">Youtube</span>
+        </div>
+        <div class="icons"></div>
+    </header>
+
+    <!--Video Player-->
+    <section class="player">
+        <video autoplay controls src="https://www.youtube.com/watch?v=67stn7Pu7s4"
+        alt="sorry, disconnect"></video>
+    </section>
+
+    <div class="infoAndUpNext">
+        <!--Video Info-->
+    <section class="info">
+        <!--Metadata-->
+        <div class="metadata">
+            <ul class="hashtags">
+                <li>#dreamCoding</li><!--해시태그-->
+                <li>#dreamCoders</li>
+                <li>#chaebin</li>
+            </ul>
+            <div class="titleAndButton">
+                <span class="title">
+                    해삐해삐해삐~<!--제목-->
+                </span>
+                <button class="moreBtn">
+                    <i class="fas fa-caret-down"></i><!--설명란 옆에 펼치기 아이콘-->
+                </button>
+            </div>
+            <span class="views">1millions views 1 months ago</span><!--조회수 나중에 자동업글되도록하기-->
+        </div>
+        <!--Actions-->
+        <div class="actions"><!--좋아요싫어요공유저장뭐시기 5개아이콘 넣기 14분header link추가-->
+            <li><button>
+                <i class="active fab fa-thumbs-up"></i>
+                <span>1K</span>
+            </button></li>
+            <li><button>
+                <i class="fab fa-thumbs-down"></i>
+                <span>0</span>
+            </button></li>
+            <li><button>
+                <i class="fab fa-share"></i>
+                <span>Share</span>
+            </button></li>
+            <li><button>
+                <i class="fab fa-plus"></i>
+                <span>Save</span>
+            </button></li>
+            <li><button>
+                <i class="fab fa-font-awesome-flag"></i>
+                <span>Report</span>
+            </button></li>
+        </div>
+        <!--Channel Description-->
+        <div class="channel">
+            <div class="metadata">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/8LOK/image/Kx3PTA8nv2pHelBbVxvavOi0lK0.JPG" 
+                alt="채널이미지 불러오는거에 실패했습니다">
+                <div class="info">
+                    <span class="name">클론코딩중인 채빈</span>
+                    <span class="subscribers">구독자수</span>
+                </div>
+            </div>
+            <button class="subscribe">subscribe</button>
+        </div>
+    </section>
+
+    <!--Upnext-->
+    <section class="UpNext">
+        <span class="title">Up Next</span>
+        <ul>
+            <li class="item">
+                <div class="img">
+                    <img src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/8LOK/image/Kx3PTA8nv2pHelBbVxvavOi0lK0.JPG" 
+                    alt="다음 채널 이미지를 불러오는 것에 실패했습니다">
+                </div>
+                <div class="info">
+                    <span class="title">다음 영상 제목</span>
+                    <span class="name">다음 영상 채널명</span>
+                    <span class="views">다음 영상 조회수</span>
+                </div>
+                <button class="morebtn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+            </li>
+            <li class="item">
+                <div class="img">
+                    <img src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/8LOK/image/Kx3PTA8nv2pHelBbVxvavOi0lK0.JPG" 
+                    alt="다음 채널 이미지를 불러오는 것에 실패했습니다">
+                </div>
+                <div class="info">
+                    <span class="title">다음 영상 제목</span>
+                    <span class="name">다음 영상 채널명</span>
+                    <span class="views">다음 영상 조회수</span>
+                </div>
+                <button class="morebtn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+            </li>
+            <li class="item">
+                <div class="img">
+                    <img src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/8LOK/image/Kx3PTA8nv2pHelBbVxvavOi0lK0.JPG" 
+                    alt="다음 채널 이미지를 불러오는 것에 실패했습니다">
+                </div>
+                <div class="info">
+                    <span class="title">다음 영상 제목</span>
+                    <span class="name">다음 영상 채널명</span>
+                    <span class="views">다음 영상 조회수</span>
+                </div>
+                <button class="morebtn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+            </li>
+        </ul>
+    </section>
+    </div>
 </body>
 </html>

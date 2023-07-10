@@ -24,12 +24,6 @@
     box-sizing: border-box;
 }
 
-.test {
-    width: 600px;
-    height: 500px;
-    border: width 2px solid blue;
-}
-
 body {
     font-family: Roboto;
 }
@@ -214,7 +208,7 @@ body > .info {
 }
 
 .upNext .item .img img {
-    width: 100%;
+    width: 50%;
 }
 
 .upNext .item .info {

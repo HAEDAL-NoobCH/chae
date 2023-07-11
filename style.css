@@ -46,7 +46,7 @@ header ul li{
     margin-left: 20px;
 }
 
-header li a {
+header ul li a {
     text-decoration: none;
     padding: 6px 15px;
     color: white;
@@ -66,7 +66,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: hidden; /*explore밑에 내려가면 안보이게함*/
 }
 
 section::before {
@@ -88,23 +88,25 @@ section img {
     height: 100%;
     object-fit: cover;
     pointer-events: none;
+    overflow: hidden;
 }
 
 section img#moon {
     mix-blend-mode: screen;
 }
 
-section img#montain_front {
+section img#mountains_front {
     z-index: 10;
 }
 
 #text {
     position: absolute;
-    right: -500px;
+    right: -350px;
     color: white;
     font-size: 7.5vw;
     z-index: 9;
     white-space: nowrap;
+    overflow: hidden;
 }
 
 #btn {
@@ -115,7 +117,7 @@ section img#montain_front {
     background: white;
     color: #2b1855;
     font-size: 1.5em;
-    z-index: 9;
+    z-index:11;
     transform: translateY(100px);
 }
 
